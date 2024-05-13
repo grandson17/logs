@@ -1,0 +1,4 @@
+<decoder name="cisco_logs">
+  <program>.*</program>
+  <regex>^(?P<timestamp>\w{3} \d{1,2} \d{2}:\d{2}:\d{2}) (?P<hostname>\S+) (?P<process_id>\d+): (?P<message_id>\d+): (?P<log_level>%\S+): (?P<message>.*)$</regex>
+</decoder>
